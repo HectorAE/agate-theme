@@ -76,7 +76,7 @@
 
    ;; Font Lock mode (syntax highlighting)
    `(font-lock-builtin-face ((t (:foreground ,rocky-peach))))
-   `(font-lock-comment-face ((t (:foreground ,comments))))
+   `(font-lock-comment-face ((t (:foreground ,comments :weight normal))))
    `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
    `(font-lock-constant-face ((t (:inherit font-lock-variable-name-face :foreground ,lighter-aquamarine))))
    `(font-lock-doc-face ((t (:foreground ,greenish-turquoise))))
