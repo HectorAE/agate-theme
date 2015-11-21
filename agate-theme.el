@@ -101,6 +101,14 @@
    `(show-paren-match ((t (:background ,less-highlighting :distant-foreground nil))))
    `(show-paren-mismatch ((t (:background ,warnings))))
    )
+
+  (custom-theme-set-variables
+   'agate
+
+   ;; Make sure the background color is set correctly
+   '(default-frame-alist `((background-color . ,background)))
+   '(initial-frame-alist `((background-color . ,background)))
+   )
   )
 
 ;; Automatically add this theme to the custom theme load path
