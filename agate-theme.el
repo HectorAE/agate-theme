@@ -106,8 +106,8 @@
    'agate
 
    ;; Make sure the background color is set correctly
-   '(default-frame-alist `((background-color . ,background)))
-   '(initial-frame-alist `((background-color . ,background)))
+   '(default-frame-alist '(`(background-color . ,background)))
+   '(initial-frame-alist '(`(background-color . ,background)))
    )
   )
 
