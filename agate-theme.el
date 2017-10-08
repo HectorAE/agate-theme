@@ -28,32 +28,38 @@
 (deftheme agate
   "Medium gray theme with prismatic flavoring")
 
-(let* ((background "#6C6C6C")	; Main background color
-       (medium-background "#525252") ; Slightly darker background color
-       (dark-background "#3D3D3D") ; Darker background color
-       (ghost-gray "#404040")	; Dark gray
-       (silvery "#C5C5C5")	; Light gray
-       (off-white "#F2F2F2")	; Very light gray
-       (foreground off-white) 	; Main text color
-       (light-cerulean "#00A9E6")
+(let* (
        (blue-gray "#A8BEFF")
-       (light-wintergreen "#18FF88")
-       (space-blue "#1991FF")
-       (greenish-turquoise "#06B4C0")
-       (lighter-aquamarine "#14DEA8")
-       (light-yellowish-tan "#F7F78F")
-       (rocky-peach "#FFAA80")
-       (true-orange "#FFBD00")
+       (cobalt "#1e488f")
        (dirt-brown "#C29223")
        (frost-cyan "#96F0FA")
+       (ghost-gray "#404040")	; Dark gray
+       (greenish-turquoise "#06B4C0")
+       (light-cerulean "#00A9E6")
+       (light-wintergreen "#18FF88")
+       (light-yellowish-tan "#F7F78F")
+       (lighter-aquamarine "#14DEA8")
+       (ocean-sky-blue "#40BBFF")
+       (off-white "#F2F2F2")	; Very light gray
        (pale-gold "#FFDE3B")
+       (rocky-peach "#FFAA80")
+       (silvery "#C5C5C5")	; Light gray
+       (slate-blue "#5b7c99")
+       ;; (space-blue "#1991FF")   ; Actually dark azure
+       (true-orange "#FFBD00")
+       ;; Semantic colors
+       (background "#6C6C6C") ; Main background color
+       (comments "#B8B8B8")
+       (dark-background "#3D3D3D") ; Darker background color
+       (errors "#FF0038")
+       (foreground off-white) 	; Main text color
        (highlighting "#909090")	; Main highlighting color, for region, etc.
        (less-highlighting "#7E7E7E") ; Secondary highlighting color, darker
-       (comments "#B8B8B8")
        (light-comments "#D4D4D4") ; When regular comments are too dark
+       (medium-background "#525252") ; Slightly darker background color
        (strings blue-gray)
-       (errors "#FF0038")
-       (warnings true-orange))
+       (warnings true-orange)
+       )
 
   (custom-theme-set-faces
    'agate
@@ -85,7 +91,7 @@
    `(font-lock-preprocessor-face ((t (:foreground ,dirt-brown :weight bold))))
    `(font-lock-string-face ((t (:foreground ,strings))))
    `(font-lock-type-face ((t :foreground ,light-wintergreen)))
-   `(font-lock-variable-name-face ((t :foreground ,space-blue)))
+   `(font-lock-variable-name-face ((t :foreground ,ocean-sky-blue)))
    `(font-lock-warning-face ((t :foreground ,warnings)))
 
    ;; LaTeX fontification
